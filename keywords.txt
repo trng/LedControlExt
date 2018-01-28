@@ -1,0 +1,4 @@
+LedControlExt	KEYWORD1
+printChar	KEYWORD2
+printString	KEYWORD2
+
