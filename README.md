@@ -1,8 +1,9 @@
 # LedControlExt
 Extension for LedControl.
+
 Added funcitons:
 - printChar;
-- printString;
-- init;
+- printString.
+
 
 And one font 5x8
