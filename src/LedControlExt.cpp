@@ -10,8 +10,8 @@
 #define LedControlExt_cpp
 
 
-#include "LedControlExt.h"
-#include "LcExtFont.h"
+#include <LedControlExt.h>
+#include <LcExtFont.h>
 
 
 void LedControlExt::printChar(byte matrixAddr, char shiftHorizontally, char symbol) {
