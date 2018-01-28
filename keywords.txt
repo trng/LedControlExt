@@ -1,4 +1,6 @@
+# Class
 LedControlExt	KEYWORD1
+
+# Functions
 printChar	KEYWORD2
 printString	KEYWORD2
-
