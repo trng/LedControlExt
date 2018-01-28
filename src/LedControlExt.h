@@ -10,8 +10,8 @@
 #ifndef LedControlExt_h
 #define LedControlExt_h
 
-#include "LedControl.h"
-#include "avr/pgmspace.h"
+#include <LedControl.h>
+#include <avr/pgmspace.h>
 
 class LedControlExt: public LedControl
 {
