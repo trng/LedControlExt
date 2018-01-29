@@ -16,8 +16,7 @@
 
 
 void LedControlExt::printChar(byte matrixAddr, char shiftHorizontally, char symbol) {
-  byte devices = getDeviceCount();
-  if (matrixAddr<0 || matrixAddr>=devices)
+  if (matrixAddr<0 || matrixAddr>=maxDevices)
     return;
 
   if (symbol<0 || symbol>=FONT_LEN)
@@ -33,12 +32,11 @@ void LedControlExt::printChar(byte matrixAddr, char shiftHorizontally, char symb
 
 
 void LedControlExt::printString(String str, byte x, byte y=0) {
-  byte totlalDevices=getDeviceCount();
-  if (x > totlalDevices*8)
+  if (x > maxDevices*8)
     return;
 
-  byte strDotArray[totlalDevices][8];
-  for (int i=0; i<totlalDevices; i++) {
+  byte strDotArray[maxDevices][8];
+  for (int i=0; i<maxDevices; i++) {
     for (int j=0; j<8; j++) {
       strDotArray[i][j] = 0;
     }
