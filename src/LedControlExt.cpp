@@ -9,7 +9,6 @@
 #ifndef LedControlExt_cpp
 #define LedControlExt_cpp
 
-#define private protected
 #include <LedControlExt.h>
 #include <LcExtFont.h>
 

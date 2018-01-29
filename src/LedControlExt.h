@@ -10,7 +10,10 @@
 #ifndef LedControlExt_h
 #define LedControlExt_h
 
+#define private protected
 #include <LedControl.h>
+#undef private
+
 #include <avr/pgmspace.h>
 
 class LedControlExt: public LedControl
