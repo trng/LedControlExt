@@ -51,7 +51,7 @@ void LedControlExt::printString(String str, byte x, byte y=0) {
     fontIdx = str.charAt(n) - 0x20;
     memcpy_P(symbol, FONT[fontIdx], 8);
     // left part
-    currentMatrix = totlalDevices - currentX/8 - 1;
+    currentMatrix = maxDevices - currentX/8 - 1;
     for(int row=0; row<8; row++) {
       strDotArray[currentMatrix][row] = strDotArray[currentMatrix][row] | (symbol[row]  >> (currentX % 8));
       setRow(currentMatrix, row, strDotArray[currentMatrix][row]);
@@ -59,12 +59,12 @@ void LedControlExt::printString(String str, byte x, byte y=0) {
 
     // rignt part
     currentX = currentX + 8;
-    currentMatrix = totlalDevices - currentX/8 - 1;
+    currentMatrix = maxDevices - currentX/8 - 1;
     for(int row=0; row<8; row++) {
       strDotArray[currentMatrix][row] = strDotArray[currentMatrix][row] | (symbol[row]  << (8 - currentX % 8));
       setRow(currentMatrix, row, strDotArray[currentMatrix][row]);
     }
-    currentX = currentX -2;
+    currentX = currentX - 2;
   }
   
     
