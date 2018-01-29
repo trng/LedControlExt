@@ -9,9 +9,10 @@
 #ifndef LedControlExt_cpp
 #define LedControlExt_cpp
 
-
+#define private protected
 #include <LedControlExt.h>
 #include <LcExtFont.h>
+
 
 
 void LedControlExt::printChar(byte matrixAddr, char shiftHorizontally, char symbol) {
@@ -70,6 +71,14 @@ void LedControlExt::printString(String str, byte x, byte y=0) {
   
     
 }
+
+void LedControlExt::clearCascade() {
+    for(int i=0; i<maxDevices; i++) {
+      clearDisplay(i);
+    }
+}
+
+
 
 #endif
 

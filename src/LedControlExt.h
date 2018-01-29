@@ -42,6 +42,7 @@ class LedControlExt: public LedControl
         void printChar(byte matrixAddr, char shiftHorizontally, char symbol);
 
         void printString(String str, byte x, byte y=0);
+        void clearCascade();
   
 };
 
