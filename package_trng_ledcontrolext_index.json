@@ -1,6 +1,13 @@
 {
-  "name": "LedControlEXt",
-  "maintainer": "trng",
-  "websiteURL": "https://github.com/trng/LedControlExt/",
-  "email": "serhy@ukr.net"
+  "packages": [
+    {
+      "name": "LedControlExt",
+      "maintainer": "trng",
+      "websiteURL": "https://github.com/trng/LedControlExt/",
+      "email": "serhy@ukr.net",
+      "help": {
+        "online": "https://github.com/trng/LedControlExt/"
+      }
+    }
+  ]
 }
